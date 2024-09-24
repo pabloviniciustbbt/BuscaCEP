@@ -21,6 +21,42 @@ O projeto ConsultarCEP é uma aplicação Java desenvolvida para consultar infor
 - **Java 11** ou superior.
 - Biblioteca `Gson` (o JAR está incluído na pasta `Dependencies`).
 
+## Diagrama de Classes
+
+```mermaid
+classDiagram
+    class Main {
+        +main(String[] args)
+    }
+
+    class Services {
+        -Gson gson
+        +cepRequest(String busca) String
+        +jsonConverter(String responseBody) Cep
+        +jsonWriter(Cep cep)
+    }
+
+    class Cep {
+        -cep
+        -logradouro
+        -bairro
+        -localidade
+        -estado
+        -uf
+        -regiao
+        +getCep() String
+        +toString() String
+    }
+
+    class ApiException {
+        +ApiException(String message)
+    }
+
+    Main o-- Services
+    Services o-- Cep
+    Services ..> ApiException
+```
+
 ## Como Executar o Projeto
 
 1. **Clone o repositório:**
@@ -80,4 +116,3 @@ Saindo...
 Sinta-se à vontade para contribuir com o projeto! Se você tem sugestões de melhorias, correções de bugs ou novas funcionalidades, abra um Pull Request e ajude a tornar o BuscaCEP ainda melhor. Suas contribuições são valorizadas e ajudam a comunidade a consultar CEPs de forma mais eficiente e prática.
 
 Divirta-se explorando o BuscaCEP e descobrindo novas informações sobre endereços!📍
-
