@@ -113,6 +113,6 @@ Saindo...
 
 ## Contribuições:
 
-Sinta-se à vontade para contribuir com o projeto! Se você tem sugestões de melhorias, correções de bugs ou novas funcionalidades, abra um Pull Request e ajude a tornar o BuscaCEP ainda melhor. Suas contribuições são valorizadas e ajudam a comunidade a consultar CEPs de forma mais eficiente e prática.
+Sinta-se à vontade para contribuir com o projeto! Se você tem sugestões de melhorias, correções de bugs ou novas funcionalidades, abra um Pull Request e ajude a tornar o BuscaCEP ainda melhor.
 
 Divirta-se explorando o BuscaCEP e descobrindo novas informações sobre endereços!📍
