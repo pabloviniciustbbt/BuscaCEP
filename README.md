@@ -16,11 +16,6 @@ O projeto BuscaCEP é uma aplicação Java desenvolvida para consultar informaç
 - **Gson**: Biblioteca para converter JSON para objetos Java e vice-versa.
 - **ViaCEP API**: API utilizada para obter informações de um CEP.
 
-## Requisitos
-
-- **Java 11** ou superior.
-- Biblioteca `Gson` (o JAR está incluído na pasta `Dependencies`).
-
 ## Diagrama de Classes
 
 ```mermaid
@@ -56,6 +51,11 @@ classDiagram
     Services o-- Cep
     Services ..> ApiException
 ```
+
+## Requisitos
+
+- **Java 11** ou superior.
+- Biblioteca `Gson` (o JAR está incluído na pasta `Dependencies`).
 
 ## Como Executar o Projeto
 
